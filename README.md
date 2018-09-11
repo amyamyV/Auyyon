@@ -20,6 +20,6 @@ CSS
 
 ## Authors
 
-* **Amy Vuong** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Amy Vuong** [amyamyv](https://github.com/amyamyv)
 
 
