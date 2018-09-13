@@ -1,3 +1,5 @@
+<base target="_blank"> <!--opens all links in NEW tab-->
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -12,8 +14,7 @@
     <link rel="icon" href="favicon-fish32x32.png">
     <!--My CSS -->
     <style>
-    #lwdmBoxes.hover {
-    }
+
 
     #elegantshd {
         color: #131313;
@@ -31,7 +32,7 @@
     }
 
 
-    #knittingBtn:active #knittingExpand, #pianoBtn:active #pianoExpand, #codingBtn:active #codingExpand{
+    #knittingBtn:active #knittingExpand, #pianoBtn:active #pianoExpand, #websiteBtn:active #websiteExpand, #bakinBtn:active #bakingExpand, #skiingBtn:active #skiingExpand, #drawingBtn:active #bakingExpand{
         width: 100%;
         color: grey;
     }
@@ -40,24 +41,37 @@
          color: pink;
     }
 
-    #codingExpand a{
-         color: white;
+    #websiteExpand a{
+         color: rgb(194, 239, 194);
     }
+
+    #bakingExpand a{
+        color: rgb(244, 209, 66);
+    }
+
+    #skiingExpand a{
+        color: rgb(196, 154, 226);
+    }
+
+    #drawingExpand a{
+        color:
+    }
+
+
+    /*Knitting, piano, website, backing, skiing, drawing*/
 
     </style>
 
 
 
-
-    <title>Auyyon</title>
   </head>
   <body class= "bg-primary text-white mr-0">
 
-      <div class="p-5 mt-0 mr-0 bg-light text-dark">
-        <h1 class="display-1 text-center" id="elegantshd">Auyyon</h1>
+      <div class="py-5 px-4 bg-white text-white">
+        <h1 class="display-1 pt-4 text-center" id="elegantshd">Auyyon</h1>
 
         <h2>
-            <div class="row pt-5 mt-4 mb-0 mr-0 font-weight-light">
+            <div class="row pt-5 mt-4 mb-0 mr-0 text-muted font-weight-light">
             <!--No margin for first element w/c on left end-->
                 <div id="lwdmBox1" class="col-sm px-2 text-center">
                     1  Learn
@@ -76,7 +90,8 @@
                 </div>
             </div>
         </h2>
-    </div> <!--Div for top box-->
+
+    </div> <!--End Div for top box-->
 
 
         <!--BODY-->
@@ -85,7 +100,7 @@
         <div class="row text-monospace">
 
 
-                <button type="button" data-toggle="collapse" id="knittingBtn" class="col-sm h2 p-5 my-0 text-center bg-warning" data-target="#knittingExpand" aria-expanded="true" aria-controls="knittingExpand" aria-pressed="true">Knitting</button>
+                <button type="button" data-toggle="collapse" id="knittingBtn" class="col-sm h2 px-3 py-5 my-0 text-center bg-warning" data-target="#knittingExpand" aria-expanded="true" aria-controls="knittingExpand" aria-pressed="true">Knitting</button>
                 <div class="collapse multi-collapse w-100" id="knittingExpand">
                     <div class="card card-body bg-warning w-100 p-5 h3">
                         1 <a href="https://www.marthastewart.com/854324/how-knit">Learn How to Knit</a>
@@ -94,7 +109,7 @@
                         2 <a href="https://youtu.be/ONVQCK_-rKc">How to Knit - Absolute Beginner Knitting, Lesson 1 - Even if You're Clueless!</a>
                         <br>
                         <br>
-                        3 <a href="https://www.google.com/maps/search/yarn/@38.9840613,-77.016912,12z/data=!3m1!4b1">Find yarn store nearby.</a>
+                        3 <a href="https://www.google.com/maps/search/yarn">Find yarn store nearby.</a>
                         <span class="h5"> Walmart works too. <br>Sharpened chopsticks (for needles) too!</span>
                         <br>
                         <br>
@@ -108,7 +123,7 @@
                 </div>
 
 
-                <button type="button" data-toggle="collapse" id="pianoBtn" class="col-sm h4 p-5 my-0 text-center bg-secondary" data-target="#pianoExpand" aria-expanded="true" aria-controls="knittingExpand" aria-pressed="true">Piano-playing</button>
+                <button type="button" data-toggle="collapse" id="pianoBtn" class="col-sm h4 px-3 py-5 my-0 text-center bg-secondary" data-target="#pianoExpand" aria-expanded="true" aria-controls="knittingExpand" aria-pressed="true">Piano-playing</button>
                 <div class="collapse multi-collapse w-100" id="pianoExpand">
                     <div class="card card-body bg-secondary w-100 p-5 h3">
                         1 <a href="https://www.letsplaykidsmusic.com/first-piano-lessons-introducing-the-note-family/">First Piano Lessons</a>
@@ -117,8 +132,8 @@
                         2 <a href="https://youtu.be/Hf44RhAddUU">Learn piano playing piano in 10 min</a>
                         <br>
                         <br>
-                        3 <a href="https://www.apronus.com/music/flashpiano.htm">Virtual Piano Online onkeyup=""</a>
-                            <span class="h5"> Uncheck "sustain box for your ears". </span>
+                        3 <a href="https://www.apronus.com/music/flashpiano.htm">Virtual Piano Online</a>
+                            <span class="h5"> Uncheck "sustain" box for your ears. </span>
                         <br>
                         <br>
                         4 <a href="https://www.8notes.com/scores/22783.asp">Au claire de la lune sheet music for Piano</a>
@@ -126,45 +141,104 @@
                         <br>
                     </div>
                 </div>
+        </div>
 
-                <button type="button" data-toggle="collapse" id="codingBtn" class="col-sm h2 p-5 my-0 text-center bg-success" data-target="#codingExpand" aria-expanded="true" aria-controls="knittingExpand" aria-pressed="true">Coding</button>
-                <div class="collapse multi-collapse w-100" id="codingExpand">
+        <div class="row">
+
+                <button type="button" data-toggle="collapse" id="websiteBtn" class="col-sm h3 px-3 py-5 my-0 text-center bg-success" data-target="#websiteExpand" aria-expanded="true" aria-controls="websiteExpand" aria-pressed="true">Website Creation</button>
+                <div class="collapse multi-collapse w-100" id="websiteExpand">
                     <div class="card card-body bg-success w-100 p-5 h3 text-light">
-                        1 <a href=""></a>
+                        1 <a href="http://www.htmldog.com/guides/html/beginner/">HTML Beginner Tutorial</a>
                         <br>
                         <br>
-                        2 <a href=""></a>
+                        2 <a href="https://youtu.be/bWPMSSsVdPk">Learn HTML in 12 Minutes</a>
                         <br>
                         <br>
-                        3 <a href=""></a>
+                        3 Open your Text Editor application
+                            <br>
+                            <a href="https://atom.io/">or install one</a>
+                            <br>
+                            Write HTML code. Save it. Click on file in Files.
                         <br>
                         <br>
-                        4 <a href=""></a>
+                        4 <a href="http://www.htmldog.com/guides/css/beginner/">CSS Beginner Tutorial</a>
+                        To make it live, make a "User or organization site." You only get one, but it's FREE"(create Github Account)
                         <br>
                         <br>
                     </div>
                 </div>
 
 
+                <button type="button" data-toggle="collapse" id="bakingBtn" class="col-sm h4 px-3 py-5 my-0 text-center bg-info" data-target="#bakingExpand" aria-expanded="true" aria-controls="bakingExpand" aria-pressed="true">Baking</button>
+                    <div class="collapse multi-collapse w-100" id="bakingExpand">
+                        <div class="card card-body bg-info w-100 p-5 h3">
+                            1 <a href="https://www.ifyougiveablondeakitchen.com/2014/01/14/10-basic-rules-of-baking/">10 Basic Rules of Baking</a>
+                            <br>
+                            <br>
+                            2 <a href="https://youtu.be/XaNELscDtms">Easy Homemade Vanilla Cake from Scratch</a>
+                            <br>
+                            <br>
+                            3 <a href="https://www.google.com/maps/search/grocery+store">Get ingredients</a> <br>
+                            <a href="http://cookiescupcakesandcardio.com/?p=2687">Recipe</a>
+                            <br>
+                            <br>
+                            4 <a href="https://www.pinterest.com/search/pins/?q=baking%20desserts&rs=typed&term_meta">Baking dessert recipes</a>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+
         </div>
 
-        <!--SECOND row-->
-        <div class="row">
-            <div class="h2 col-sm p-5 my-0 text-center bg-info">
-                Baking
 
+        <!--THIRD row-->
+        <div class="row text-monospace">
+
+
+            <button type="button" data-toggle="collapse" id="skiingBtn" class="col-sm h4 px-3 py-5 my-0 text-center bg-dark" data-target="#skiingExpand" aria-expanded="true" aria-controls="skiingExpand" aria-pressed="true">Skiing</button>
+                <div class="collapse multi-collapse w-100" id="skiingExpand">
+                    <div class="card card-body bg-dark w-100 p-5 h3">
+                        1 <a href="https://www.bulgariaski.com/how-to-ski.shtml">How to ski</a>
+                        <br>
+                        <br>
+                        2 <a href="https://youtu.be/OO4AiCtvrQs">Basic Skiing Stance</a> <br>
+                        <a href="https://youtu.be/hEKUUoxYw30">Standing Up After A Crash </a>
+                        <br>
+                        <br>
+                        3 <a href="https://www.google.com/maps/search/skiing+resort/">Go on the slopes! </a>
+
+                        <br>
+                        <br>
+                        4 <a href="https://youtu.be/WrUGac_EoTE">HOW TO SKI | CARVING</a>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+
+
+        <button type="button" data-toggle="collapse" id="drawingBtn" class="col-sm h4 px-3 py-5 my-0 text-center bg-danger" data-target="#drawingExpand" aria-expanded="true" aria-controls="drawingExpand" aria-pressed="true">Drawing</button>
+            <div class="collapse multi-collapse w-100" id="drawingExpand">
+                <div class="card card-body bg-danger w-100 p-5 h3">
+                    1 <a href="http://rapidfireart.com/2017/04/06/lesson-1-how-to-sketch/">How To Sketch</a>
+                    <br>
+                    <br>
+                    2 <a href="https://www.youtube.com/watch?v=iMEBSQJYaAY">How to Draw Faces</a>
+                    <br>
+                    <br>
+                    3 <a href="https://medium.com/personal-growth/a-quick-beginners-guide-to-drawing-58213877715e">A quick beginner’s guide to drawing</a>
+                        <br>
+                            Get out your pencil and paper!
+                    <br>
+                    <br>
+                    4 <a href="https://www.behance.net/gallery/15452621/30-Day-Drawing-Challenge">
+                            30 Day Drawing Challenge
+                        </a>
+                    <br>
+                    <br>
+                </div>
             </div>
 
-            <div class="h2 col-sm p-5 my-0 text-center bg-dark">
-                Skiing
-
-
-            </div>
-            <div class="h2 col-sm p-5 my-0 text-center bg-danger">
-                Drawing
-            </div>
         </div>
-
 
 
 
@@ -178,20 +252,22 @@
 </html>
 
 
-<!-- <button type="button" data-toggle="collapse" id="pianoBtn" class="col-sm h2 p-5 my-0 text-center bg-secondary" data-target="#knittingExpand" aria-expanded="true" aria-controls="knittingExpand" aria-pressed="true">Piano</button>
-<div class="collapse multi-collapse w-100" id="pianoExpand">
-    <div class="card card-body bg-secondary w-100 p-5 h3">
-        1 <a href=""></a>
-        <br>
-        <br>
-        2 <a href=""></a>
-        <br>
-        <br>
-        3 <a href=""></a>
-        <br>
-        <br>
-        4 <a href=""></a>
-        <br>
-        <br>
-    </div>
-</div> -->
+<!--
+        <button type="button" data-toggle="collapse" id="____Btn" class="col-sm h4 px-3 py-5 my-0 text-center bg-_____" data-target="#______Expand" aria-expanded="true" aria-controls="_______Expand" aria-pressed="true">__________</button>
+            <div class="collapse multi-collapse w-100" id="____Expand">
+                <div class="card card-body bg-_______ w-100 p-5 h3">
+                    1 <a href=""></a>
+                    <br>
+                    <br>
+                    2 <a href=""></a>
+                    <br>
+                    <br>
+                    3 <a href=""></a>
+
+                    <br>
+                    <br>
+                    4 <a href=""></a>
+                    <br>
+                    <br>
+                </div>
+            </div> -->
